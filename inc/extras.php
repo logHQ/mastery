@@ -287,8 +287,8 @@ function mastery_options_display_sidebar() {
 			<div class="fb-like" data-href="<?php echo esc_url( 'https://www.facebook.com/LogHQ' ); ?>" data-send="false" data-layout="button_count" data-width="90" data-show-faces="true"></div>
 			<div class="tw-follow" ><a href="https://twitter.com/LogHQ" class="twitter-follow-button" data-show-count="false">Follow @Login.Plus</a></div>
 		  </div>
-			<p><b><a href="<?php echo esc_url( 'https://wp.login.plus/doc/masteryfulness/' ); ?>"><?php esc_html_e( 'mastery Documentation','mastery' ); ?></a></b></p>
-			<p><?php _e( 'The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via','mastery' ) ?> <a href="<?php echo esc_url( 'https://community.login.plus/forum/masteryfulness/' ); ?>"><?php esc_html_e( 'Login.Plus support forum','mastery' ) ?></a>.</p>
+			<p><b><a href="<?php echo esc_url( 'https://wp.login.plus/doc/mastery-theme-documentation/' ); ?>"><?php esc_html_e( 'mastery Documentation','mastery' ); ?></a></b></p>
+			<p><?php _e( 'The best way to contact us with <b>support questions</b> and <b>bug reports</b> is via','mastery' ) ?> <a href="<?php echo esc_url( 'https://community.login.plus/forum/mastery/' ); ?>"><?php esc_html_e( 'Login.Plus support forum','mastery' ) ?></a>.</p>
 			<p><?php esc_html_e( 'If you like this theme, I\'d appreciate any of the following:','mastery' ) ?></p>
 			<ul>
 			  <li><a class="button" href="<?php echo esc_url( 'https://wordpress.org/support/theme/mastery/reviews/?filter=5' ); ?>" title="<?php esc_attr_e( 'Rate this Theme', 'mastery' ); ?>" target="_blank"><?php printf( esc_html__( 'Rate this Theme','mastery' ) ); ?></a></li>

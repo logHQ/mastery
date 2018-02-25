@@ -42,7 +42,7 @@ function mastery_welcome_customize_register( $wp_customize ) {
 				array(
 					'title'       => esc_html__( 'Mastery', 'mastery' ),
 					'button_text' => esc_html__( 'Documentation', 'mastery' ),
-					'button_url'  => esc_url_raw( 'https://wp.login.plus/doc/mastery/' ),
+					'button_url'  => esc_url_raw( 'https://wp.login.plus/doc/mastery-theme-documentation/' ),
 					'priority'    => 0,
 				)
 			)
