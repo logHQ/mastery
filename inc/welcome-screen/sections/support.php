@@ -27,7 +27,7 @@
 			<i><?php esc_html_e( 'Want to get the gist on the latest theme changes? Just consult our changelog below to get a taste of the recent fixes and features implemented.', 'mastery' ) ?></i>
 		</p>
 		<p>
-			<a target="_blank"  href="<?php echo esc_url( 'http://wp.login.plus/mastery#changelog' ); ?>"><?php esc_html_e( 'See changelog', 'mastery' ); ?></a>
+			<a target="_blank"  href="<?php echo esc_url( 'http://wp.login.plus/doc/mastery-theme-documentation/#changelog' ); ?>"><?php esc_html_e( 'See changelog', 'mastery' ); ?></a>
 		</p>
 	</div><!--/.col-->
 
