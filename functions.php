@@ -845,7 +845,7 @@ if ( !function_exists( 'socialmedia_share_button' ) ){
         // Do this on social media
         if ( $type == "full" || $type == "detail"){
 
-            $facebook   = "Share on Facebook";          $twitter    = "Tweet on Twitter";
+            $facebook   = "Sharen Facebook";          $twitter    = "Tweet on Twitter";
             $googleplus = "Share on Google+";           $pinterest  ="Pin on Pinterest";
             $whatsapp   = "Share on WhatsApp";          $telegram   = "Share on Telegram";
 

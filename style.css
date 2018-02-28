@@ -2416,7 +2416,6 @@ iframe#wp-custom-header-video {
     width: 70px;
     height: 35px;
     text-align: center;
-    padding-top: 10px;
    }
 .social-medium {
   font-size: 21px;
@@ -2431,12 +2430,12 @@ iframe#wp-custom-header-video {
 }
 
 @media screen and (min-width:1199px){
-    .social-sharing-button.social-facebook.social-medium:after {content: "Share on Facebook ";}
-    .social-sharing-button.social-twitter.social-medium:after {content: "Tweet on Twitter";}
-    .social-sharing-button.social-google.social-medium:after {content: "Share on Google+";}
-    .social-sharing-button.social-whatsapp.social-medium:after {content: "Share via WhatsApp";}
-    .social-sharing-button.social-telegram.social-medium:after {content: "Share via Telegram";}
-    .social-sharing-button.social-pinterest.social-medium:after {content: "Pin on Pinterest";}
+    .social-sharing-button.social-facebook.social-medium:after {content: "Share";}
+    .social-sharing-button.social-twitter.social-medium:after {content: "Tweet";}
+    .social-sharing-button.social-google.social-medium:after {content: "Share";}
+    .social-sharing-button.social-whatsapp.social-medium:after {content: "WhatsApp";}
+    .social-sharing-button.social-telegram.social-medium:after {content: "Telegram";}
+    .social-sharing-button.social-pinterest.social-medium:after {content: "Pin";}
     .social-sharing-button{margin:0px;font-size:14px;}
 }
 
