@@ -124,27 +124,6 @@ if ( ! function_exists( 'mastery_header_menu' ) ) :
 	} /* end header menu */
 endif;
 
-
-  if ( ! function_exists( 'mastery_design01header_menu' ) ) :
-  	/**
-   * Header menu (should you choose to use one)
-   */
-  	function mastery_design01header_menu() {
-  		  // display the WordPress Custom Menu if available
-  		  wp_nav_menu(array(
-  			  'menu'              => 'design01',
-  			  'theme_location'    => 'design01',
-  			  'container'         => 'div',
-  			  'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
-  			  'menu_class'        => 'nav navbar-nav',
-  			  'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-  			  'walker'            => new WP_Bootstrap_Navwalker(),
-  		  ));
-  	} /* end header menu */
-  endif;
-
-
-
 if ( ! function_exists( 'mastery_footer_links' ) ) :
 	/**
  * Footer menu (should you choose to use one)

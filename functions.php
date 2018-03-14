@@ -115,7 +115,7 @@ function theme_slug_header_style() {
         register_nav_menus(array(
               'primary'      => esc_html__('Primary Menu', 'mastery'),
               'footer-links' => esc_html__('Footer Links', 'mastery'),// secondary nav in footer
-              'design01'      => esc_html__('Design01 Menu', 'mastery'),
+              
           ));
 
         // Enable support for Post Formats.
