@@ -115,7 +115,7 @@ function theme_slug_header_style() {
         register_nav_menus(array(
               'primary'      => esc_html__('Primary Menu', 'mastery'),
               'footer-links' => esc_html__('Footer Links', 'mastery'),// secondary nav in footer
-              
+
           ));
 
         // Enable support for Post Formats.
@@ -195,7 +195,14 @@ function mastery_widgets_init()
         'before_title'  => '<h3 class="widget-title">',
         'after_title'   => '</h3>',
     ));
-
+    register_sidebar(array(
+        'name'          => esc_html__('Sidebar for blog page', 'mastery'),// add to translation
+        'id'            => 'sidebar-blog',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ));
 
     register_sidebar(array(
         'id'            => 'footer-widget-1',
@@ -233,30 +240,6 @@ function mastery_widgets_init()
         'before_title'  => '<h3 class="widgettitle">',
         'after_title'   => '</h3>',
     ));
-
-    /* Design 01 is page template that has its own widgets and sidebar */
-
-    register_sidebar(array(
-      'name'          => esc_html__('Sidebar for Design 01 page', 'mastery'),// add to translation
-      'id'            => 'sidebar-design01',
-        'description'   => esc_html__( 'Displayed on Page types where Template is chosen as "Design01 Page". Page Editor > Page Attributes > Template > Design01 Page', 'mastery' ),
-      'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-      'after_widget'  => '</aside>',
-      'before_title'  => '<h3 class="widget-title">',
-      'after_title'   => '</h3>',
-      ));
-
-  // registering the Front Page: Content Top Section
-    register_sidebar( array(
-      'name'          => esc_html__( 'Design01 Page Section 1', 'mastery' ),
-      'id'            => 'mastery_design01_section1',
-      'description'   => esc_html__( 'Displayed on Page types where Template is chosen as "Design01 Page". Page Editor > Page Attributes > Template > Design01 Page', 'mastery' ),
-        // 'before_widget' => '<section id="%1$s" class="widget %2$s clearfix">',
-      'before_widget' => '<section id="%1$s" class="widget %2$s">',
-      'after_widget'  => '</section>',
-      'before_title'  => '<h2 class="widget-title section-heading  text-uppercase"><span>',
-      'after_title'   => '</span></h2>',
-      ) );
 
 
       register_sidebar(array(
