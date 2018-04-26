@@ -496,6 +496,22 @@ function mastery_customizer( $wp_customize ) {
 		'type' => 'epsilon-toggle',
 	) ) );
 
+	// Header Search Icon
+  $wp_customize->add_setting('mastery[top_header]',
+	array(
+      'default'           => 0,
+      'type'						=>'option',
+      'sanitize_callback' => 'mastery_sanitize_checkbox',
+    )	);
+
+  $wp_customize->add_control( new Epsilon_Control_Toggle( $wp_customize, 'mastery[top_header]', array(
+      'type'        => 'epsilon-toggle',
+      'label'       =>esc_html__( 'Top Header.', 'mastery' ),
+      'section'     => 'mastery_header_options',
+      'description' =>sprintf(__('Check the box to remove Top Header.', 'mastery') ),
+    ) ) );
+
+
 //header-text-color
 	$wp_customize->add_setting('mastery[header_text_color]', array(
 		'default' => '', //sanitize_hex_color( '#ffffff' ),
@@ -679,6 +695,17 @@ function mastery_customizer( $wp_customize ) {
 	));
 	$wp_customize->add_control( new Epsilon_Control_Toggle( $wp_customize, 'mastery[footer_social]', array(
 		'label' => __( 'Footer Social Icons', 'mastery' ),
+		'description' => sprintf( __( 'Check to show social icons in footer', 'mastery' ) ),
+		'section' => 'mastery_social_options',
+		'type' => 'epsilon-toggle',
+	) ) );
+	$wp_customize->add_setting('mastery[top_menu_social]', array(
+		'default' => 0,
+		'type' => 'option',
+		'sanitize_callback' => 'mastery_sanitize_checkbox',
+	));
+	$wp_customize->add_control( new Epsilon_Control_Toggle( $wp_customize, 'mastery[top_menu_social]', array(
+		'label' => __( 'Top Header Social Icons', 'mastery' ),
 		'description' => sprintf( __( 'Check to show social icons in footer', 'mastery' ) ),
 		'section' => 'mastery_social_options',
 		'type' => 'epsilon-toggle',

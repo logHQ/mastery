@@ -2483,3 +2483,31 @@ iframe#wp-custom-header-video {
 @media screen and (min-width: 768px){.zoom-thumbnail-tile {height: 420px;}}
 @media screen and (min-width: 992px){.zoom-thumbnail-tile {height: 405px;}}
 @media screen and (min-width: 1200px){.zoom-thumbnail-tile {height: 422px;}}
+
+
+
+#menu-top-menu {
+
+    float: left;
+
+}
+.top-menu-right{
+  float: right;
+}
+
+.top-menu-right ul{
+  margin-bottom: 0px !important;
+}
+
+.top-menu-right nav.social-icons li a{
+  line-height: 30px;
+  height: 30px;
+  width: 30px;
+  margin-top: 1px;
+  margin-bottom: 0px;
+}
+
+
+.top-header-menu .top-menu > li{
+  padding: 5px 10px;
+}

@@ -124,6 +124,32 @@ if ( ! function_exists( 'mastery_header_menu' ) ) :
 	} /* end header menu */
 endif;
 
+
+if ( ! function_exists( 'mastery_top_menu' ) ) :
+	/**
+ * Header menu (should you choose to use one)
+ */
+	function mastery_top_menu() {
+			// display the WordPress Custom Menu if available
+			wp_nav_menu(array(
+				'menu'              => 'TopMenu',
+				'theme_location'    => 'Topmenu',
+				//'container'         => 'div',
+				//'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
+				'menu_class'        => 'nav navbar-nav top-menu',
+				'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+				'walker'            => new WP_Bootstrap_Navwalker(),
+			));
+
+//if ( of_get_option( 'top_menu_social' ) ) { mastery_social_icons();}
+
+
+
+	} /* end header menu */
+endif;
+
+
+
 if ( ! function_exists( 'mastery_footer_links' ) ) :
 	/**
  * Footer menu (should you choose to use one)
@@ -335,6 +361,19 @@ function mastery_social() {
 		mastery_social_icons();
 	}
 }
+
+
+
+/**
+ * Fallback option for the old Social Icons.
+ */
+function mastery_top_social() {
+	if ( of_get_option( 'top_menu_social' ) ) {
+		mastery_social_icons();
+	}
+}
+
+
 
 /**
  * Fallback for removed mastery_post_nav function

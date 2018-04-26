@@ -34,6 +34,19 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 	<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 	<div id="page" class="hfeed site">
 		<header id="masthead" class="site-header"  itemscope itemtype="https://schema.org/WPHeader">
+			<div class="top-header-menu">
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+					<?php if( of_get_option( 'top_header', '' ) ==  '1' ) : ?>
+						<?php mastery_top_menu(); // main navigation ?>
+
+
+            <div class="top-menu-right">
+                <?php if ( of_get_option( 'top_menu_social' ) ) { mastery_social_icons();} ?>
+            </div>
+					<?php endif; ?>
+       </div>
+      </div>
 			<div class="custom-header-media">
 				<?php the_custom_header_markup(); ?>
 			</div>
