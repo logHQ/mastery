@@ -72,12 +72,12 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && (strpos( $_SERVER['HTTP_USER_AGENT'
 												<div class="site-branding-text">
 													<?php
 													if ( is_front_page() || is_home() ) : ?>
-													<h1 class="site-title"  itemprop="name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" ><?php bloginfo( 'name' ); ?></a></h1>
+													<h1 class="site-title"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" ><?php bloginfo( 'name' ); ?></a></h1>
 													<?php else : ?>
 													<p class=" site-title"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 													<?php endif;?>
 
-													<p class="site-description"  itemprop="description"><?php echo get_bloginfo('description'); ?></p>
+													<p class="site-description"><?php echo get_bloginfo('description'); ?></p>
 
 												</div>
 										<?php endif; ?>
